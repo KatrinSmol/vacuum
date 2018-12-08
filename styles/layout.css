@@ -6,9 +6,9 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 
   width: 100vw;
+  margin: 0 auto;
   /* height: 50vh; */
   /* color: #e7f5fc; */
     /* background-color: #ff6700; */
@@ -16,56 +16,81 @@ header {
   color: #fff;
 }
 
-header .description h1, h2 {
-  margin: 0 auto;
+header .description {
+  z-index: 10;
 
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 header .description  h1 {
-  padding-left: 27px;
+  padding-left: 13px;
 
   letter-spacing: 0.2em;
-
-  font-family: "Adieu-Bold",sans-serif;
-  font-size: 150px;
-  font-weight: 900;
-}
-
-header .description h2 {
-  padding: 20px 0px 0px 0px;
 
   font-family: "Adieu-Bold",sans-serif;
   font-size: 50px;
   font-weight: 900;
 }
 
-header .shapes {
-  display: flex;
-  justify-content: space-around;
+header .description h2 {
+  padding: 8px 0px 0px 0px;
 
-  width: 100vw;
-  height: 40vh
+  font-family: "Adieu-Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+header .shapes {
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 header .shapes .shape-1 {
   align-self: flex-end;
 
-  width: 362px;
-  height: 362px;
+  width: 100px;
+  height: 100px;
   margin: 100px 0px 30px 20px;
 
-  border-radius: 34% 66% 36% 64% / 43% 67% 33% 57% ;
+  border-radius: 34px 66px 36px 64px / 43px 67px 33px 57px ;
   background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
 }
 
-
 header .shapes .shape-2 {
-  width: 362px;
-  height: 362px;
+  align-self: flex-start;
+
+  width: 100px;
+  height: 100px;
   margin: 30px 20px 10px 60px;
 
-  border-radius: 100% 64% 78% 80% / 100% 52% 100% 55%    ;
+  border-radius: 100px 64px 78px 80px / 100px 52px 100px 55px    ;
+  background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
+}
+
+header .shapes .shape-3 {
+  align-self: flex-start;
+
+  width: 100px;
+  height: 100px;
+  margin: 30px 20px 10px 20px;
+
+  border-radius: 52px 48px 36px 64px / 37px 67px 33px 63px;
+  background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
+}
+
+header .shapes .shape-4 {
+  align-self: flex-end;
+
+  width: 80px;
+  height: 80px;
+  margin: 30px 20px 10px 60px;
+
+  border-radius: 69px 31px 79px 21px / 72px 44px 56px 28px;
   background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
 }
 
@@ -74,12 +99,77 @@ header .shapes .shape-5 {
   height: 62px;
   margin: 30px 20px 10px 60px;
 
-  border-radius: 73% 27% 40% 60% / 53% 35% 65% 47%     ;
+  border-radius: 73px 27px 40px 60px / 53px 35px 65px 47px     ;
   background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main .shapes {
+  display: inline-flex;
+
+  margin-top: 30px;
+}
+
+main .shapes .shape-1 {
+  width: 100px;
+  height: 100px;
+  /* transform: rotate(90deg); */
+
+  border-radius: 100% 0% 45% 55% / 58% 64% 36% 42%   ;
+  background: white;
+}
+
+main .shapes .shape-2 {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 0% 100% 45% 55% / 63% 60% 40% 37%   ;
+  background:white;
+
 }
 
 
 
-@media all and (min-width:768px) {
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+  header .description  h1 {
+    font-size: 200px;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  header .description  h1 {
+    font-size: 200px;
+  }
+
+}
+
+@media screen and (min-width:1440px) {
+
+  header .description  h1 {
+    font-size: 200px;
+  }
+
 }
