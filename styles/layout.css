@@ -45,6 +45,7 @@ header .shapes {
   justify-content: space-around;
 
   width: 100vw;
+  height: 40vh
 }
 
 header .shapes .shape-1 {
@@ -58,13 +59,27 @@ header .shapes .shape-1 {
   background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
 }
 
-header .shapes .shape-2 {
-  display: block;
 
+header .shapes .shape-2 {
   width: 362px;
   height: 362px;
   margin: 30px 20px 10px 60px;
 
   border-radius: 100% 64% 78% 80% / 100% 52% 100% 55%    ;
   background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
+}
+
+header .shapes .shape-5 {
+  width: 62px;
+  height: 62px;
+  margin: 30px 20px 10px 60px;
+
+  border-radius: 73% 27% 40% 60% / 53% 35% 65% 47%     ;
+  background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
+}
+
+
+
+@media all and (min-width:768px) {
+  
 }
