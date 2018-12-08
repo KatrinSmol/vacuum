@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-flow: column;
+
   background-color: #160983;
 }
 
@@ -25,12 +28,12 @@ header .description {
 }
 
 header .description  h1 {
-  padding-left: 13px;
+  padding-left: 10px;
 
   letter-spacing: 0.2em;
 
   font-family: "Adieu-Bold",sans-serif;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 900;
 }
 
@@ -38,7 +41,7 @@ header .description h2 {
   padding: 8px 0px 0px 0px;
 
   font-family: "Adieu-Bold",sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
 }
 
@@ -105,31 +108,88 @@ header .shapes .shape-5 {
 
 main {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 30px;
 }
 
-main .shapes {
+main .top-shape {
   display: inline-flex;
 
   margin-top: 30px;
 }
 
-main .shapes .shape-1 {
-  width: 100px;
-  height: 100px;
+main .top-shape .shape-1 {
+  width: 40vw;
+  height: 40vw;
   /* transform: rotate(90deg); */
 
   border-radius: 100% 0% 45% 55% / 58% 64% 36% 42%   ;
   background: white;
 }
 
-main .shapes .shape-2 {
-  width: 100px;
-  height: 100px;
+main .top-shape .shape-2 {
+  width: 40vw;
+  height: 40vw;
 
   border-radius: 0% 100% 45% 55% / 63% 60% 40% 37%   ;
   background:white;
 
+}
+
+main .bottom-shape {
+  display: inline-flex;
+
+  transform: rotate(180deg);
+
+}
+
+main .bottom-shape .shape-1 {
+  width: 40vw;
+  height: 40vw;
+  /* transform: rotate(90deg); */
+
+  border-radius: 100% 0% 45% 55% / 58% 64% 36% 42%   ;
+  background: white;
+}
+
+main .bottom-shape .shape-2 {
+  width: 40vw;
+  height: 40vw;
+
+  border-radius: 0% 100% 45% 55% / 63% 60% 40% 37%   ;
+  background:white;
+
+}
+
+main .text {
+  width: 80vw;
+  margin: 30px 0px 30px 0px;
+
+  color: white;
+
+  font-family: "Muller",sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer .contact li {
+  padding: 5px;
+
+  color: white;
+
+  font-family: "Adieu-Bold",sans-serif;
+  font-size: 15px;
+  font-weight: 900;
 }
 
 
