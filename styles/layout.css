@@ -1,0 +1,70 @@
+body {
+  background-color: #160983;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100vw;
+  /* height: 50vh; */
+  /* color: #e7f5fc; */
+    /* background-color: #ff6700; */
+
+  color: #fff;
+}
+
+header .description h1, h2 {
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+header .description  h1 {
+  padding-left: 27px;
+
+  letter-spacing: 0.2em;
+
+  font-family: "Adieu-Bold",sans-serif;
+  font-size: 150px;
+  font-weight: 900;
+}
+
+header .description h2 {
+  padding: 20px 0px 0px 0px;
+
+  font-family: "Adieu-Bold",sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+header .shapes {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100vw;
+}
+
+header .shapes .shape-1 {
+  align-self: flex-end;
+
+  width: 362px;
+  height: 362px;
+  margin: 100px 0px 30px 20px;
+
+  border-radius: 34% 66% 36% 64% / 43% 67% 33% 57% ;
+  background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
+}
+
+header .shapes .shape-2 {
+  display: block;
+
+  width: 362px;
+  height: 362px;
+  margin: 30px 20px 10px 60px;
+
+  border-radius: 100% 64% 78% 80% / 100% 52% 100% 55%    ;
+  background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
+}
