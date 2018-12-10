@@ -60,7 +60,7 @@ header .shapes .shape-1 {
   height: 100px;
   margin: 100px 0px 30px 20px;
 
-  border-radius: 34px 66px 36px 64px / 43px 67px 33px 57px ;
+  border-radius: 34% 66% 36% 64% / 43% 67% 33% 57% ;
   background: linear-gradient(135deg, rgb(255, 63, 5) 0%, rgba(240, 113, 23, 0.96) 29%, #ff9900 59%, rgb(247, 160, 52) 100%);
 }
 
@@ -114,55 +114,6 @@ main {
   margin-bottom: 30px;
 }
 
-main .top-shape {
-  display: inline-flex;
-
-  margin-top: 30px;
-}
-
-main .top-shape .shape-1 {
-  width: 40vw;
-  height: 40vw;
-  /* transform: rotate(90deg); */
-
-  border-radius: 100% 0% 45% 55% / 58% 64% 36% 42%   ;
-  background: white;
-}
-
-main .top-shape .shape-2 {
-  width: 40vw;
-  height: 40vw;
-
-  border-radius: 0% 100% 45% 55% / 63% 60% 40% 37%   ;
-  background:white;
-
-}
-
-main .bottom-shape {
-  display: inline-flex;
-
-  transform: rotate(180deg);
-
-}
-
-main .bottom-shape .shape-1 {
-  width: 40vw;
-  height: 40vw;
-  /* transform: rotate(90deg); */
-
-  border-radius: 100% 0% 45% 55% / 58% 64% 36% 42%   ;
-  background: white;
-}
-
-main .bottom-shape .shape-2 {
-  width: 40vw;
-  height: 40vw;
-
-  border-radius: 0% 100% 45% 55% / 63% 60% 40% 37%   ;
-  background:white;
-
-}
-
 main .text {
   width: 80vw;
   margin: 30px 0px 30px 0px;
@@ -180,6 +131,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 footer .contact li {
@@ -207,13 +159,24 @@ footer .contact li {
 
 
 
+@media screen and (min-width:321px) {
 
+  header .shapes .shape-1 {
+    width: 110px;
+    height: 110px;
+  }
 
+}
 
 @media screen and (min-width:768px) {
 
   header .description  h1 {
     font-size: 200px;
+  }
+  
+  header .shapes .shape-1 {
+    width: 140px;
+    height: 140px;
   }
 
 }
