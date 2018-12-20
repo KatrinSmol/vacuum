@@ -9,3 +9,33 @@
 
   src: url("../fonts/Adieu-Bold.woff");
 }
+
+@font-face {
+  font-family: "font-1";
+
+  src: url("../fonts/font-1.woff");
+}
+
+@font-face {
+  font-family: "font-2";
+
+  src: url("../fonts/font-2.woff");
+}
+
+@font-face {
+  font-family: "font-3";
+
+  src: url("../fonts/font-3.woff");
+}
+
+@font-face {
+  font-family: "font-4";
+
+  src: url("../fonts/font-4.woff");
+}
+
+@font-face {
+  font-family: "Muller";
+
+  src: url("../fonts/Fontfabric - MullerBold.woff");
+}
