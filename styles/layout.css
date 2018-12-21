@@ -21,7 +21,7 @@ main header {
 }
 
 main header h1 {
-  padding: 0vw 11vw 0vw 12vw;
+  padding: 0vw 11vw 0vw 14vw;
 
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -251,7 +251,7 @@ main img.appstore  {
 @media all and (min-width: 768px) {
 
   main img.appstore {
-    width: 17vw;
+    width: 13vw;
     padding: 2vw 42vw 7vw 42vw;
   }
 
@@ -271,7 +271,7 @@ main img.appstore  {
   }
 
   main .text-2 {
-    padding: 25vw 11vw 25vw 11vw;
+    padding: 30vw 11vw 30vw 11vw;
   }
 
 }
