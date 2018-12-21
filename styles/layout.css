@@ -232,11 +232,12 @@ main section.section-3 .ellipse-textarea ul {
   font-size: 6vw;
 }
 
-main footer ul {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  flex-direction: row;
+main img.appstore {
   width: 80vw;
+  padding: 0vw 11vw 0vw 11vw;
+}
+
+main img.appstore  {
+  width: 30vw;
+  padding: 7vw 35vw 7vw 35vw;
 }
