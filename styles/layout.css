@@ -84,21 +84,19 @@ main header .ellipse {
 
 main .description {
   padding: 20vw 11vw 25vw 11vw;
-}
 
-main .description,
-main .text-1,
-main .text-2,{
-  width: 80vw;
+  transition: 50ms;
 }
 
 main .description,
 main .text-1,
 main .text-2,
 main footer {
-  font-family: "font-1",sans-serif;
+  transition: 50ms;
+
   color: #ffffff;
 
+  font-family: "font-1",sans-serif;
   font-size: 6vw;
   font-weight: 300;
 }
@@ -144,10 +142,14 @@ main section img.sphere-opened {
 
 main .text-1 {
   padding: 20vw 11vw 0vw 11vw;
+
+  transition: 50ms;
 }
 
 main .text-2 {
   padding: 35vw 11vw 35vw 11vw;
+
+  transition: 50ms;
 }
 
 main section.section-2 {
@@ -240,4 +242,37 @@ main img.appstore {
 main img.appstore  {
   width: 30vw;
   padding: 7vw 35vw 7vw 35vw;
+
+  transition: 50ms;
 }
+
+
+
+@media all and (min-width: 768px) {
+
+  main img.appstore {
+    width: 17vw;
+    padding: 2vw 42vw 7vw 42vw;
+  }
+
+  main .description,
+  main .text-1,
+  main .text-2,
+  main footer {
+    font-size: 4vw;
+  }
+
+  main .description {
+    padding: 15vw 11vw 20vw 11vw;
+  }
+
+  main .text-1 {
+   padding: 15vw 11vw 0vw 11vw;
+  }
+
+  main .text-2 {
+    padding: 25vw 11vw 25vw 11vw;
+  }
+
+}
+  
