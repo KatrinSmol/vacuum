@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 300,
           },
           translateX: {
-            value: -1000,
+            value: '-50vw',
             duration: 400,
           },
           borderRadius: {
