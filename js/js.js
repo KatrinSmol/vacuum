@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Scrolled to waypoint!')
       }
     },
-    offset: '80%',
+    offset: 'bottom-in-view',
   })
 
   let waypoint_up = new Waypoint({
