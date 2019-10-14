@@ -2,40 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="viewport" content="width=device-width">
     <title></title>
   </head>
   <body>
 
-    <main>
+    <main id="main">
 
       <img src="images/ships.png" alt="ships" class="ships-up">
 
-      <header>
+      <header id="header">
         <h1>вакуум</h1>
         <h2>звукоизолирующая среда</h2>
-        <div class="ellipse"></div>
+        <div id="ellipse" class="ellipse"><p class="description">Мобильное приложение для генерации сферы, изолирующей от внешних звуков.</p></div>
       </header>
 
-      <p class="description">Мобильное приложение для генерации сферы, изолирующей от внешних звуков</p>
 
-      <section class="section-1">
-        <p>В мире, переполненном информацией, человеку необходима тишина. </p>
-        <img data-aos="zoom-in-down" src="images/noise.png" alt="noise" class="noise">
+
+      <section class="section-1" id="section_1">
+        <p>В мире, переполненном информацией, человеку необходима</p>
+        <p id="word" data-aos="zoom-in">тишина.</p>
+        <img src="images/noise.png" alt="noise" class="noise">
+        <div id="silence" data-aos="zoom-in"><p id="text_1">Вакуум поможет создать ее.</p></div>
         <img src="images/sphere-opened.png" alt="sphere-opened" class="sphere-opened">
       </section>
 
-      <p class="text-1">Вакуум поможет создать ее.</p>
-
-      <section class="section-2">
+      <section class="section-2" id="section_2">
         <img src="images/sphere-closed.png" alt="sphere-closed" class="sphere-closed">
         <div class="textarea">
-          <ul class="textarea-ul-1">
+          <ul class="textarea-ul-1" id="textarea_ul_1">
             <li>вне</li>
             <li>шума</li>
           </ul>
-          <ul class="textarea-ul-2">
+          <ul class="textarea-ul-2" id="textarea_ul_2">
             <li>мыслей</li>
             <li>города</li>
             <li>людей</li>
@@ -45,28 +46,32 @@
         </div>
       </section>
 
-      <p class="text-2">И услышать свои мысли среди суеты.</p>
+      <section id="section_silence">
+        <div id="silence_2"><p class="text-2" id="text_2">И услышать свои мысли среди суеты.</p></div>
+      </section>
 
-      <section class="section-3">
+
+      <section class="section-3" id="section_3">
         <div class="ellipse-textarea">
           <div class="ellipse"></div>
-          <ul>
+          <ul id="text_last">
             <li>сохрани</li>
             <li>свою</li>
             <li>тишину</li>
           </ul>
         </div>
-        <img src="images/ships.png" alt="ships" class="ships-down">
+        <img src="images/ships.png" alt="ships" class="ships-down" id="ships">
       </section>
 
-      <img src="images/appstore.png" alt="appstore" class="appstore">
+      <img src="images/appstore.png" alt="appstore" class="appstore" id="appstore">
 
     </main>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/js.js" ></script>
 
   </body>
 </html>
